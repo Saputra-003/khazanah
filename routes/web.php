@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('backend.home');
 });
 
 // Route::resource('user', [UserController::class]);
@@ -23,3 +23,13 @@ Route::get('/', function () {
 Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
+
+
+
+//TEST
+// Route::get('test', function () {
+//     return view('layouts.backend');
+// });
